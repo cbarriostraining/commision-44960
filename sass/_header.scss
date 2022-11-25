@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 10% 80% 5% 5%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "nav nav nav nav" "main main main main" "footer footer footer footer";
+    grid-row-gap: 5em;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    max-width: auto;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 1em 1em 1.5em 2.5em black;
+    .header__textSize {
+        font-size: x-large;
+    }
+}
+
+.header {
+    grid-area: nav;
+    &__nav {
+        background-color: gold;
+    }
+    &__boxShadow {
+        box-shadow: 1em 1em 1.5em 1em black;
+    }
+    &__logo {
+        width: 64px;
+        height: 64px;
+    }
+    &__textSize {
+        font-size: x-large;
+    }
+    &__optionsTextSize {
+        font-size: x-large;
+    }
+}

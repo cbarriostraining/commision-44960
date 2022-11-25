@@ -1,0 +1,257 @@
+@media screen and (min-width:$mobileMinWidth) and (max-width:$mobileMaxWidth) {
+    .header {
+        &__nav {
+            background-color: gold;
+        }
+        &__textSize {
+            font-size: smaller;
+        }
+        &__optionsTextSize {
+            font-size: smaller;
+        }
+    }
+    div.main {
+        &__svgImg {
+            width: 12%;
+            height: 12%;
+            transform: scaleX(-1);
+        }
+    }
+    .main {
+        &__callUsTextSize {
+            font-size: 2vw;
+            color: yellow;
+        }
+    }
+
+    .email-text-size{
+        font-size: small;
+        font-weight:bold;
+        
+        }
+
+     p.call-us-text-size{
+            font-size:5vw;
+            color: white;
+        }
+
+    div svg.svg-img {
+            width: 12%; height: 12%;transform: scaleX(-1);
+        }
+
+}
+
+@media screen and (min-width:$tabletMinWidth) and (max-width:$tabletMaxWidth) {
+    .header {
+        &__nav {
+            font-size: large;
+            font-style: italic;
+        }
+        &__textSize {
+            font-size: smaller;
+        }
+        &__optionsTextSize {
+            font-size: smaller;
+        }
+    }
+    div.main {
+        &__svgImg {
+            width: 10%;
+            height: 10%;
+            transform: scaleX(-1);
+        }
+    }
+    .main {
+        &__callUsTextSize {
+            font-size: 5vw;
+            color: white;
+        }
+    }
+    div.showItemsInRowCenterFlexStart {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+    .showItemsInColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .boxSection2 {
+        &__textImagesFatherFlex {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 1em;
+        }
+    }
+    .box-values {
+        margin: .1 0 .1 0;
+        padding: .1em .1em .1em .1em;
+        background-color: white;
+        text-align: justify;
+    }
+    p.call-us-text-size{
+        font-size:6vw;
+        color: white;
+    }
+
+    div svg.svg-img {
+        width: 10%; height: 10%;transform: scaleX(-1);
+    }
+}
+
+@media screen and (min-width:$desktop1MinWidth) and (max-width:$desktop1MaxWidth) {
+    div.main {
+        &__svgImg {
+            width: 5%;
+            height: 5%;
+            transform: scaleX(-1);
+        }
+    }
+    div p.main__callUsTextSize {
+        font-size: 3vw;
+        font-style: italic;
+        color: yellow;
+    }
+    div .showItemsInRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+    }
+    .box-values {
+        margin: .1 0 .1 0;
+        padding: .1em .1em .1em .1em;
+        background-color: white;
+        text-align: justify;
+    }
+
+    div .showItemsInRowStretchCenter{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    div .call-us{
+        display:flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items:center;
+    }
+    div p.call-us-text-size{
+        font-size:3vw;
+        color: white;
+    }
+
+    div svg.svg-img {
+        width: 5%; height: 5%;transform: scaleX(-1);
+    }
+
+
+}
+
+@media screen and (min-width:$desktop2MinWidth) and (max-height:$desktop2MaxHeight) {
+    div.main {
+        &__svgImg {
+            width: 12%;
+            height: 12%;
+            transform: scaleX(-1);
+        }
+    }
+    p.main__callUsTextSize {
+        font-size: 5vw;
+        font-style: italic;
+        color: yellow;
+    }
+
+    .email-text-size {
+        font-size:xx-large;
+        font-weight:bold;
+    }
+
+    p.call-us-text-size{
+        font-size:5vw;
+        color: white;
+    }
+
+    div svg.svg-img {
+        width: 12%; height: 12%;transform: scaleX(-1);
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width:$desktop2MinWidth) {
+    div.main {
+        &__svgImg {
+            width: 9%;
+            height: 9%;
+            transform: scaleX(-1);
+            display: none;
+        }
+    }
+    p.main__callUsTextSize {
+        font-size: 3vw;
+        font-style: italic;
+        color: yellow;
+    }
+    div .showItemsInRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    div .showItemsInRowStretchCenter{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+    }
+    .titles {
+        margin: 1em 0 1em 0;
+    }
+    .boxSection2 {
+        &__textImagesFatherFlex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 1em;
+        }
+    }
+
+    .images-success-stories{
+        border-radius: 4px;
+        width: 50%; 
+        height: auto; 
+        margin: 0 0.7em 0 0.7em;
+    }
+    .email-text-size{
+        font-size:xx-large;
+    }
+
+    div .call-us{
+        display:flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items:center;
+    }
+
+    p.call-us-text-size{
+        font-size:3vw;
+        color: white;
+    }
+
+    div svg.svg-img {
+        width: 9%; height: 9%;transform: scaleX(-1);
+        z-index:99;
+    } 
+
+
+}
