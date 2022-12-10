@@ -1,257 +1,1209 @@
-@media screen and (min-width:$mobileMinWidth) and (max-width:$mobileMaxWidth) {
-    .header {
-        &__nav {
-            background-color: gold;
-        }
-        &__textSize {
-            font-size: smaller;
-        }
-        &__optionsTextSize {
-            font-size: smaller;
-        }
-    }
-    div.main {
-        &__svgImg {
-            width: 12%;
-            height: 12%;
-            transform: scaleX(-1);
-        }
-    }
-    .main {
-        &__callUsTextSize {
-            font-size: 2vw;
-            color: yellow;
-        }
-    }
+            @media screen and (min-width:$mobileMinWidth) and (max-height:$mobile2MaxHeight) {
+                .header {
+                    &__nav {
+                        font-size: medium;
+                    }
+                    &__logo {
+                        height: 43px;
+                        width: 43px;
+                    }
+                    &__textSize {
+                        font-size: large;
+                    }
+                    &__optionsTextSize {
+                        font-size: large;
+                    }
+                }
+                .main {
+                    background-color: tomato;
+                    padding-top: .5em;
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 10%;
+                        height: 15%;
+                    }
+                    &__homeImage {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 1em;
+                    }
+                    &__titleH1 {
+                        padding: 0 0 0 0;
+                        margin: .1em 0 1em 0;
+                        background-color: white;
+                        border-radius: 0 0 4px 4px;
+                    }
+                    &__callUsContactBox {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        margin: 2em 0 1em 0;
+                        background-color: black;
+                    }
+                    &__callUsTextSize {
+                        font-size: 5vw;
+                        color: white;
+                    }
+                    &__svgImg {
+                        width: 7%;
+                        height: 7%;
+                        transform: scaleX(-1);
+                        color: white;
+                    }
+                    &__boxSection {
+                        margin: 0 0 3em 0;
+                        padding: 1em 1em 2em 1em;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &__homeBenefitsImages {
+                        border-radius: 50%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__titles {
+                        margin: 1em 0 1em 0;
+                        font-weight: bold;
+                    }
+                    &__subTitleH4 {
+                        margin: .2em 0 .2em 0;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: .2em .8em .2em .8em;
+                        width: 60%;
+                        height: 35%;
+                    }
 
-    .email-text-size{
-        font-size: small;
-        font-weight:bold;
-        
-        }
+                    &__imageOfEachSection {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 2em;
+                    }
+                    &__ourServicesImages {
+                        border-radius: 2%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
 
-     p.call-us-text-size{
-            font-size:5vw;
-            color: white;
-        }
+                    &__showItemsInRowReverseCenterFlexStart {
+                        display: flex;
+                        flex-direction:column-reverse;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    &__aboutImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    &__commpanyValuesImages {
+                        border-radius: 4px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    &__boxValues {
+                        margin: 0 3em 0 0;
+                        padding: 1em 1em 1em 1em;
+                        background-color: white;
+                        text-align: justify;
+                    }
+                    &__imagesSuccessStories {
+                        border-radius: 4px;
+                        width: 80%;
+                        height: auto;
+                        margin: 0.4em 0.7em 0.4em 0.7em;
+                    }
+                    &__contactForm {
+                        width: 100%;
+                        height: auto;
+                        padding-top: 2em;
+                    }
+                    &__inputSpaces {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+                    &__emailTextSize {
+                        font-size: medium;
+                        font-weight: bold;
+                    }
+                    &__description{
+                        text-align:justify;   
+                    }
+                    &__articuloTexto{
+                        text-align:justify;  
+                        margin: 0 2em 0 2em;
+ 
+                    }
 
-    div svg.svg-img {
-            width: 12%; height: 12%;transform: scaleX(-1);
-        }
-
-}
-
-@media screen and (min-width:$tabletMinWidth) and (max-width:$tabletMaxWidth) {
-    .header {
-        &__nav {
-            font-size: large;
-            font-style: italic;
-        }
-        &__textSize {
-            font-size: smaller;
-        }
-        &__optionsTextSize {
-            font-size: smaller;
-        }
-    }
-    div.main {
-        &__svgImg {
-            width: 10%;
-            height: 10%;
-            transform: scaleX(-1);
-        }
-    }
-    .main {
-        &__callUsTextSize {
-            font-size: 5vw;
-            color: white;
-        }
-    }
-    div.showItemsInRowCenterFlexStart {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
-    }
-    .showItemsInColumn {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .boxSection2 {
-        &__textImagesFatherFlex {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin: 1em;
-        }
-    }
-    .box-values {
-        margin: .1 0 .1 0;
-        padding: .1em .1em .1em .1em;
-        background-color: white;
-        text-align: justify;
-    }
-    p.call-us-text-size{
-        font-size:6vw;
-        color: white;
-    }
-
-    div svg.svg-img {
-        width: 10%; height: 10%;transform: scaleX(-1);
-    }
-}
-
-@media screen and (min-width:$desktop1MinWidth) and (max-width:$desktop1MaxWidth) {
-    div.main {
-        &__svgImg {
-            width: 5%;
-            height: 5%;
-            transform: scaleX(-1);
-        }
-    }
-    div p.main__callUsTextSize {
-        font-size: 3vw;
-        font-style: italic;
-        color: yellow;
-    }
-    div .showItemsInRow {
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items: center;
-    }
-    .box-values {
-        margin: .1 0 .1 0;
-        padding: .1em .1em .1em .1em;
-        background-color: white;
-        text-align: justify;
-    }
-
-    div .showItemsInRowStretchCenter{
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items: center;
-    }
-
-    div .call-us{
-        display:flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items:center;
-    }
-    div p.call-us-text-size{
-        font-size:3vw;
-        color: white;
-    }
-
-    div svg.svg-img {
-        width: 5%; height: 5%;transform: scaleX(-1);
-    }
-
-
-}
-
-@media screen and (min-width:$desktop2MinWidth) and (max-height:$desktop2MaxHeight) {
-    div.main {
-        &__svgImg {
-            width: 12%;
-            height: 12%;
-            transform: scaleX(-1);
-        }
-    }
-    p.main__callUsTextSize {
-        font-size: 5vw;
-        font-style: italic;
-        color: yellow;
-    }
-
-    .email-text-size {
-        font-size:xx-large;
-        font-weight:bold;
-    }
-
-    p.call-us-text-size{
-        font-size:5vw;
-        color: white;
-    }
-
-    div svg.svg-img {
-        width: 12%; height: 12%;transform: scaleX(-1);
-    }
+                }
+                .boxSection2 {
 
 
+                    &__textImagesFatherFlexReverse {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: space-around;
+                        margin: 1em;
+                    }
+
+                    &__imagesSection2 {
+                        border-radius: 1%;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            
+            @media screen and (width:280px) and (max-height:654px) {
+                .header {
+                    &__nav {
+                        font-size: medium;
+                    }
+                    &__logo {
+                        height: 32px;
+                        width: 32px;
+                    }
+                    &__textSize {
+                        font-size:small;
+                    }
+                    &__optionsTextSize {
+                        font-size: medium;
+                    }
+                }
+                .main {
+                    background-color: grey;
+                    padding-top: .5em;
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 10%;
+                        height: 15%;
+                    }
+                    &__homeImage {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 1em;
+                    }
+                    &__titleH1 {
+                        padding: 0 0 0 0;
+                        margin: .1em 0 1em 0;
+                        background-color: white;
+                        border-radius: 0 0 4px 4px;
+                    }
+                    &__callUsContactBox {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        margin: 2em 0 1em 0;
+                        background-color: black;
+                    }
+                    &__callUsTextSize {
+                        font-size: 5vw;
+                        color: white;
+                    }
+                    &__svgImg {
+                        width: 7%;
+                        height: 7%;
+                        transform: scaleX(-1);
+                        color: white;
+                    }
+                    // &__contactButton {
+                    //     margin-right: 10em;
+                    // }
+                    &__boxSection {
+                        margin: 0 0 3em 0;
+                        padding: 1em 1em 2em 1em;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &__homeBenefitsImages {
+                        border-radius: 50%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__titles {
+                        margin: 1em 0 1em 0;
+                        font-weight: bold;
+                    }
+                    &__subTitleH4 {
+                        margin: .2em 0 .2em 0;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: .2em .8em .2em .8em;
+                        width: 80%;
+                        height: 55%;
+                    }
+                    &__imageOfEachSection {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 2em;
+                    }
+                    &__ourServicesImages {
+                        border-radius: 2%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
 
 
 
-}
-
-@media screen and (min-width:$desktop2MinWidth) {
-    div.main {
-        &__svgImg {
-            width: 9%;
-            height: 9%;
-            transform: scaleX(-1);
-            display: none;
-        }
-    }
-    p.main__callUsTextSize {
-        font-size: 3vw;
-        font-style: italic;
-        color: yellow;
-    }
-    div .showItemsInRow {
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items: center;
-    }
-
-    div .showItemsInRowStretchCenter{
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items: center;
-    }
-    .titles {
-        margin: 1em 0 1em 0;
-    }
-    .boxSection2 {
-        &__textImagesFatherFlex {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            margin: 1em;
-        }
-    }
-
-    .images-success-stories{
-        border-radius: 4px;
-        width: 50%; 
-        height: auto; 
-        margin: 0 0.7em 0 0.7em;
-    }
-    .email-text-size{
-        font-size:xx-large;
-    }
-
-    div .call-us{
-        display:flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items:center;
-    }
-
-    p.call-us-text-size{
-        font-size:3vw;
-        color: white;
-    }
-
-    div svg.svg-img {
-        width: 9%; height: 9%;transform: scaleX(-1);
-        z-index:99;
-    } 
 
 
-}
+
+
+
+                    &__aboutImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    &__commpanyValuesImages {
+                        border-radius: 4px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    &__boxValues {
+                        margin: 0 3em 0 0;
+                        padding: 1em 1em 1em 1em;
+                        background-color: white;
+                        text-align: justify;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: 1em .8em 1em .8em;
+                        width: 100%;
+                        height: 75%;
+                    }
+                    &__imagesSuccessStories {
+                        border-radius: 4px;
+                        width: 85%;
+                        height: auto;
+                        margin: 0 0.7em 0 0.7em;
+                    }
+                    &__contactForm {
+                        width: 100%;
+                        height: auto;
+                        padding-top: 2em;
+                    }
+                    &__contactLocation {
+                        width: 100%;
+                        height: 90%;
+                    }
+                    &__inputSpaces {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+                    &__emailTextSize {
+                        font-size: small;
+                        font-weight: bold;
+                    }
+                    &__description{
+                        text-align:justify;   
+                    }
+                    &__articuloTexto{
+                        text-align:justify;  
+                        margin: 0 2em 0 2em;
+ 
+                    }
+                }
+            }
+            
+            @media screen and (width:360px) and (height:740px) {
+                .header {
+                    &__nav {
+                        font-size: medium;
+                    }
+                    &__logo {
+                        height: 43px;
+                        width: 43px;
+                    }
+                    &__textSize {
+                        font-size: large;
+                    }
+                    &__optionsTextSize {
+                        font-size: large;
+                    }
+                }
+                .main {
+                    background-color: yellow;
+                    padding-top: .5em;
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 10%;
+                        height: 15%;
+                    }
+                    &__homeImage {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 1em;
+                    }
+                    &__titleH1 {
+                        padding: 0 0 0 0;
+                        margin: .1em 0 1em 0;
+                        background-color: white;
+                        border-radius: 0 0 4px 4px;
+                    }
+                    &__callUsContactBox {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        margin: 2em 0 1em 0;
+                        background-color: black;
+                    }
+                    &__callUsTextSize {
+                        font-size: 5vw;
+                        color: white;
+                    }
+                    &__svgImg {
+                        width: 7%;
+                        height: 7%;
+                        transform: scaleX(-1);
+                        color: white;
+                    }
+                    &__boxSection {
+                        margin: 0 0 3em 0;
+                        padding: 1em 1em 2em 1em;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &__homeBenefitsImages {
+                        border-radius: 50%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__titles {
+                        margin: 1em 0 1em 0;
+                        font-weight: bold;
+                    }
+                    &__subTitleH4 {
+                        margin: .2em 0 .2em 0;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: .2em .8em .2em .8em;
+                        width: 80%;
+                        height: 55%;
+                    }
+                    &__imageOfEachSection {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 2em;
+                    }
+                    &__ourServicesImages {
+                        border-radius: 2%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__showItemsInRowReverseCenterFlexStart {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                    &__aboutImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    &__commpanyValuesImages {
+                        border-radius: 4px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    &__boxValues {
+                        margin: 0 3em 0 0;
+                        padding: 1em 1em 1em 1em;
+                        background-color: white;
+                        text-align: justify;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: 1em .8em 1em .8em;
+                        width: 100%;
+                        height: 75%;
+                    }
+                    &__imagesSuccessStories {
+                        border-radius: 4px;
+                        width: 45%;
+                        height: auto;
+                        margin: 0 0.7em 0 0.7em;
+                    }
+                    &__contactForm {
+                        width: 100%;
+                        height: auto;
+                        padding-top: 2em;
+                    }
+                    &__contactLocation {
+                        width: 100%;
+                        height: 90%;
+                    }
+                    &__inputSpaces {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+                    &__emailTextSize {
+                        font-size: medium;
+                        font-weight: bold;
+                    }
+                    &__description{
+                        text-align:justify;   
+                    }
+                    &__articuloTexto{
+                        text-align:justify;  
+                        margin: 0 2em 0 2em;
+ 
+                    }
+                }
+            }
+            
+            @media screen and (min-width:$tabletMinWidth) and (max-height:$tabletMaxHeight) {
+                .header {
+                    &__nav {
+                        font-size: medium;
+                    }
+                    &__logo {
+                        height: 96px;
+                        width: 96px;
+                    }
+                    &__textSize {
+                        font-size: xx-large;
+                    }
+                    &__optionsTextSize {
+                        font-size: xx-large;
+                    }
+                }
+                .main {
+                    background-color: brown;
+                    padding-top: .5em;
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 10%;
+                        height: 15%;
+                    }
+                    &__homeImage {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 1em;
+                    }
+                    &__titleH1 {
+                        padding: 0 0 0 0;
+                        margin: .1em 0 1em 0;
+                        background-color: white;
+                        border-radius: 0 0 4px 4px;
+                    }
+                    &__callUsContactBox {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        margin: 2em 0 1em 0;
+                        background-color: black;
+                    }
+                    &__callUsTextSize {
+                        font-size: 5vw;
+                        color: white;
+                    }
+                    &__svgImg {
+                        width: 7%;
+                        height: 7%;
+                        transform: scaleX(-1);
+                        color: white;
+                    }
+ 
+                    &__boxSection {
+                        margin: 0 0 3em 0;
+                        padding: 1em 1em 2em 1em;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &__homeBenefitsImages {
+                        border-radius: 50%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__titles {
+                        margin: 1em 0 1em 0;
+                        font-weight: bold;
+                    }
+                    &__subTitleH4 {
+                        margin: .2em 0 .2em 0;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: .2em .8em .2em .8em;
+                        width: 50%;
+                        height: 25%;
+                    }
+                    &__imageOfEachSection {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 2em;
+                    }
+                    &__ourServicesImages {
+                        border-radius: 2%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__showItemsInRowReverseCenterFlexStart {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                    &__aboutImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    &__commpanyValuesImages {
+                        border-radius: 4px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    &__boxValues {
+                        margin: 0 3em 0 0;
+                        padding: 1em 1em 1em 1em;
+                        background-color: white;
+                        text-align: justify;
+                    }
+
+
+
+
+
+
+
+
+                    
+                    &__imagesSuccessStories {
+                        border-radius: 4px;
+                        width: 45%;
+                        height: auto;
+                        margin: 0 0.7em 0 0.7em;
+                    }
+                    &__contactForm {
+                        width: 100%;
+                        height: auto;
+                        padding-top: 2em;
+                    }
+                    &__inputSpaces {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+                    &__emailTextSize {
+                        font-size: medium;
+                        font-weight: bold;
+                    }
+                    &__description{
+                        text-align:justify;   
+                    }
+                    &__articuloTexto{
+                        text-align:justify;  
+                        margin: 0 2em 0 2em;
+ 
+                    }
+                }
+                .boxSection2 {
+
+                    &__textImagesFatherFlexReverse {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: 1em;
+                    }
+                    &__imagesSection2 {
+                        border-radius: 1%;
+                        width: 55%;
+                        height: 55%;
+                    }
+                }
+            }
+            
+            @media screen and (min-width:1024px) and (max-height:600px) {
+                .header {
+                    &__nav {
+                        font-size: medium;
+                    }
+                    &__logo {
+                        height: 64px;
+                        width: 64px;
+                    }
+                    &__textSize {
+                        font-size: x-large;
+                    }
+                    &__optionsTextSize {
+                        font-size: large;
+                    }
+                }
+                .main {
+                    background-color: yellow;
+                    padding-top: .5em;
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 10%;
+                        height: 15%;
+                    }
+                    &__homeImage {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 1em;
+                    }
+                    &__titleH1 {
+                        padding: 0 0 0 0;
+                        margin: .1em 0 1em 0;
+                        background-color: white;
+                        border-radius: 0 0 4px 4px;
+                    }
+                    &__callUsContactBox {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        margin: 2em 0 1em 0;
+                        background-color: black;
+                    }
+                    &__callUsTextSize {
+                        font-size: 5vw;
+                        color: white;
+                    }
+                    &__svgImg {
+                        width: 7%;
+                        height: 7%;
+                        transform: scaleX(-1);
+                        color: white;
+                    }
+                    &__boxSection {
+                        margin: 0 0 3em 0;
+                        padding: 1em 1em 2em 1em;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 50%;
+                        height: 50%;
+                    }
+                    &__homeBenefitsImages {
+                        border-radius: 50%;
+                        width: 35%;
+                        height: 35%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__titles {
+                        margin: 1em 0 1em 0;
+                        font-weight: bold;
+                    }
+                    &__subTitleH4 {
+                        margin: .2em 0 .2em 0;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: .2em .8em .2em .8em;
+                        width: 40%;
+                        height: 15%;
+                    }
+                    &__imageOfEachSection {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 2em;
+                    }
+                    &__ourServicesImages {
+                        border-radius: 2%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__showItemsInRowReverseCenterFlexStart {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                    &__aboutImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    &__commpanyValuesImages {
+                        border-radius: 4px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    &__boxValues {
+                        margin: 0 3em 0 0;
+                        padding: 1em 1em 1em 1em;
+                        background-color: white;
+                        text-align: justify;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: 1em .8em 1em .8em;
+                        width: 100%;
+                        height: 75%;
+                    }
+                    &__imagesSuccessStories {
+                        border-radius: 4px;
+                        width: 45%;
+                        height: auto;
+                        margin: 0 0.7em 0 0.7em;
+                    }
+                    &__contactForm {
+                        width: 100%;
+                        height: auto;
+                        padding-top: 2em;
+                    }
+                    &__contactLocation {
+                        width: 100%;
+                        height: 90%;
+                    }
+                    &__inputSpaces {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+                    &__emailTextSize {
+                        font-size: medium;
+                        font-weight: bold;
+                    }
+                    &__description{
+                        text-align:justify;   
+                     }
+                     &__articuloTexto{
+                         text-align:justify;  
+                         margin: 0 2em 0 2em;
+ 
+                      }
+                }
+            }
+            
+            @media screen and (min-width:1280px) and (max-height:800px) {
+                .header {
+                    &__nav {
+                        font-size: medium;
+                    }
+                    &__logo {
+                        height: 64px;
+                        width: 64px;
+                    }
+                    &__textSize {
+                        font-size: xx-large;
+                    }
+                    &__optionsTextSize {
+                        font-size: x-large;
+                    }
+                }
+                .main {
+                    background-color: yellow;
+                    padding-top: .5em;
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 10%;
+                        height: 15%;
+                    }
+                    &__homeImage {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 1em;
+                    }
+                    &__titleH1 {
+                        padding: 0 0 0 0;
+                        margin: .1em 0 1em 0;
+                        background-color: white;
+                        border-radius: 0 0 4px 4px;
+                    }
+                    &__callUsContactBox {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        margin: 2em 0 1em 0;
+                        background-color: black;
+                    }
+                    &__callUsTextSize {
+                        font-size: 5vw;
+                        color: white;
+                    }
+                    &__svgImg {
+                        width: 7%;
+                        height: 7%;
+                        transform: scaleX(-1);
+                        color: white;
+                    }
+                    // &__contactButton {
+                    //     margin-right: 10em;
+                    // }
+                    &__boxSection {
+                        margin: 0 0 3em 0;
+                        padding: 1em 1em 2em 1em;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 50%;
+                        height: 50%;
+                    }
+                    &__homeBenefitsImages {
+                        border-radius: 50%;
+                        width: 35%;
+                        height: 35%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__titles {
+                        margin: 1em 0 1em 0;
+                        font-weight: bold;
+                    }
+                    &__subTitleH4 {
+                        margin: .2em 0 .2em 0;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: .2em .8em .2em .8em;
+                        width: 40%;
+                        height: 15%;
+                    }
+                    &__imageOfEachSection {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 2em;
+                    }
+                    &__ourServicesImages {
+                        border-radius: 2%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__showItemsInRowReverseCenterFlexStart {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                    &__aboutImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    &__commpanyValuesImages {
+                        border-radius: 4px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    &__boxValues {
+                        margin: 0 3em 0 0;
+                        padding: 1em 1em 1em 1em;
+                        background-color: white;
+                        text-align: justify;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: 1em .8em 1em .8em;
+                        width: 100%;
+                        height: 75%;
+                    }
+                    &__imagesSuccessStories {
+                        border-radius: 4px;
+                        width: 45%;
+                        height: auto;
+                        margin: 0 0.7em 0 0.7em;
+                    }
+                    &__contactForm {
+                        width: 100%;
+                        height: auto;
+                        padding-top: 2em;
+                    }
+                    &__contactLocation {
+                        width: 100%;
+                        height: 90%;
+                    }
+                    &__inputSpaces {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+                    &__emailTextSize {
+                        font-size: medium;
+                        font-weight: bold;
+                    }
+                    &__description{
+                        text-align:justify;   
+                     }
+                     &__articuloTexto{
+                         text-align:justify;  
+                         margin: 0 2em 0 2em;
+ 
+                      }
+                }
+            }
+            
+            @media screen and (min-width:$desktop2MinWidth) {
+                .header {
+                    &__nav {
+                        font-size: medium;
+                    }
+                    &__logo {
+                        height: 64px;
+                        width: 64px;
+                    }
+                    &__textSize {
+                        font-size: xx-large;
+                    }
+                    &__optionsTextSize {
+                        font-size: x-large;
+                    }
+                }
+                .main {
+                    background-color: tomato;
+                    padding-top: .5em;
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 10%;
+                        height: 15%;
+                    }
+                    &__homeImage {
+                        border-radius: .5em;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        padding-top: 1em;
+                    }
+                    &__titleH1 {
+                        padding: 0 0 0 0;
+                        margin: .1em 0 1em 0;
+                        background-color: white;
+                        border-radius: 0 0 4px 4px;
+                    }
+                    &__callUsContactBox {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center;
+                        margin: 2em 0 1em 0;
+                        background-color: black;
+                    }
+                    &__callUsTextSize {
+                        font-size: 4vw;
+                        color: white;
+                    }
+                    &__svgImg {
+                        width: 7%;
+                        height: 7%;
+                        transform: scaleX(-1);
+                        color: white;
+                    }
+                    // &__contactButton {
+                    //     margin-right: 10em;
+                    // }
+                    &__boxSection {
+                        margin: 0 0 3em 0;
+                        padding: 1em 1em 2em 1em;
+                        background-color: white;
+                        text-align: center;
+                    }
+                    &__homeImages {
+                        border-radius: 4px;
+                        width: 70%;
+                        height: 70%;
+                    }
+                    &__homeBenefitsImages {
+                        border-radius: 50%;
+                        width: 50%;
+                        height: 50%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__titles {
+                        margin: 1em 0 1em 0;
+                        font-weight: bold;
+                    }
+                    &__subTitleH4 {
+                        margin: .2em 0 .2em 0;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: .2em .8em .2em .8em;
+                        width: 40%;
+                        height: 15%;
+                    }
+                    &__ourServicesImages {
+                        border-radius: 2%;
+                        width: 65%;
+                        height: 65%;
+                        border-color: blueviolet;
+                        border-style: double;
+                    }
+                    &__showItemsInRowCenterFlexStart {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                    &__showItemsInRowReverseCenterFlexStart {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                    &__aboutImages {
+                        border-radius: 4px;
+                        width: 100%;
+                        height: auto;
+                    }
+                    &__commpanyValuesImages {
+                        border-radius: 4px;
+                        width: 100px;
+                        height: 100px;
+                    }
+                    &__boxValues {
+                        margin: 0 3em 0 0;
+                        padding: 1em 1em 1em 1em;
+                        background-color: white;
+                        text-align: justify;
+                    }
+                    &__clientImages {
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin: 1em .8em 1em .8em;
+                        width: 100%;
+                        height: 75%;
+                    }
+                    &__imagesSuccessStories {
+                        border-radius: 4px;
+                        width: 45%;
+                        height: auto;
+                        margin: 0 0.7em 0 0.7em;
+                    }
+
+                    &__contactForm {
+                        width: 100%;
+                        height: auto;
+                        padding-top: 2em;
+                    }
+                    &__emailTextSize {
+                        font-size: xx-large;
+                        font-weight: bold;
+                    }
+                    &__inputSpaces {
+                        padding-top: 1em;
+                        padding-bottom: 1em;
+                    }
+
+                    &__description{
+                       text-align:justify;   
+                    }
+                    &__articuloTexto{
+                        text-align:justify;  
+                        margin: 0 2em 0 2em;
+
+                     }
+                    
+                }
+                .boxSection2 {
+                    &__textImagesFatherFlex {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        margin: 1em;
+                    }
+                    &__textImagesFatherFlexReverse {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        margin: 1em;
+                    }
+                    &__imagesSection2 {
+                        border-radius: 1%;
+                        width: 55%;
+                        height: 55%;
+                    }
+                }
+            }

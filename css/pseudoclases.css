@@ -1,6 +1,4 @@
-/* ul li :hover{
-    border-radius: 8%;
-    background-color: black;
-    color: white;
-
-} */
+ ul li :hover{
+    border-radius: 3%;
+    background-color: tomato;
+} 
